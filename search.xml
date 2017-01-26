@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[如何创建自己的博客]]></title>
+      <url>%2F2017%2F01%2F18%2FFirst%2F</url>
+      <content type="text"><![CDATA[创建属于自己的博客安装 hexo 必须先安装node123打开git-bush,进入到一个合适的存放hexo的文件目录，直接运行http://www.xp510.com/xiazai/Application/other/28541.htmlnpm install -g hexo-cli 注意安装时的错误提示 创建自己的博客1安装完hexo之后，运行下面的三条命令，hexo init blog -&gt; cd blog -&gt; npm install hexo init cd blognpm installhexo s1建立起本地的服务器，默认端口4000，打开浏览器，网址http://localhost:4000就可访问自己的博客 切换主题 hexo 官方提供了大量的优秀主题，我现在使用的是next主题，官网(http://theme-next.iissnan.com/ Next ) 主题代码拷贝主题的拷贝也是直接使用 git 即可，首先进入到你博客的根目录blog，再打开 git-bash 运行1git clone https://github.com/iissnan/hexo-theme-next themes/next 启用主题 在博客根目录下找到 _config.yml 文件，找到里面的 theme，改为next 发布博客到coding 配置 hexo deployhexo 提供了一个部署命令 hexo deploy，首先需要安装一下 hexo-deployer-git插件1npm install hexo-deployer-git --save 记得配置config.yml 配置信息123456# Sitetitle: Shallysubtitle: 码农的日常description: start from zeroauthor: yangfang: zh-CNtimezone: Asia/Shanxi 配置统一资源定位符(个人域名) url:http://inderstack.com对于root（根目录）、permalink（永久链接）、permalink_default(默认永久链接)等其他信息保持默认 配置部署1234deploy: type: git repo: https://github.com/bai1994/bai1994.github.io.git branch: master bai1994这是我的域名，这里请填写自己的域名（域名自己定义，要求简短有意义，符合标准的驼峰命名）]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>%2F2017%2F01%2F07%2Fhello-world%2F</url>
+      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    </entry>
+
+    
+  
+  
+</search>
