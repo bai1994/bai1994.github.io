@@ -104,7 +104,9 @@
 <meta property="og:image" content="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%874.png">
 <meta property="og:image" content="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%875.png">
 <meta property="og:image" content="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%876.png">
-<meta property="og:updated_time" content="2017-02-20T15:23:31.059Z">
+<meta property="og:image" content="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%878.png">
+<meta property="og:image" content="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%879.png">
+<meta property="og:updated_time" content="2017-02-21T05:22:08.288Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何创建自己的博客">
 <meta name="twitter:description" content="创建属于自己的博客安装 hexo
@@ -371,20 +373,21 @@
 <h2 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">安装完hexo之后，运行下面的三条命令，hexo init blog -&gt; <span class="built_in">cd</span> blog -&gt; npm install</div></pre></td></tr></table></figure>
 <p></p><p><folder>是你自己的文件夹名，比如博客的文件夹名称是blog</folder></p><p></p>
 <blockquote>
-<p><em>hexo init <floder 文件名=""></floder></em><br><img src="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%873.png" alt="image"><br><em>cd blog</em><br><img src="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%874.png" alt="image"></p>
+<p><em>hexo init <floder 文件名=""></floder></em><br><span><img src="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%873.png" alt="image"></span><br><em>cd blog</em><br><img src="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%874.png" alt="image"></p>
 <p><em>npm install(自动安装所需要的全部插件)</em><br><img src="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%875.png" alt="image"><br>hexo s<br><img src="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%876.png" alt="image"><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">建立起本地的服务器，默认端口4000，打开浏览器，网址http://localhost:4000就可访问自己的博客</div></pre></td></tr></table></figure></p>
 </blockquote>
 <h2 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h2><blockquote>
 <p>hexo 官方提供了大量的优秀主题，我现在使用的是next主题，官网(<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a> Next )</p>
 <h3 id="主题代码拷贝"><a href="#主题代码拷贝" class="headerlink" title="主题代码拷贝"></a>主题代码拷贝</h3><p>主题的拷贝也是直接使用 git 即可，首先进入到你博客的根目录blog，再打开 git-bash 运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure></p>
 </blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![image](http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%877.png)</div></pre></td></tr></table></figure>
 <h2 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h2><blockquote>
-<p>在博客根目录下找到 _config.yml 文件，找到里面的 theme，改为next</p>
+<p>在博客根目录下找到 _config.yml 文件，找到里面的 theme，改为next<br><img src="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%878.png" alt="image"></p>
 </blockquote>
 <h2 id="发布博客到coding"><a href="#发布博客到coding" class="headerlink" title="发布博客到coding"></a>发布博客到coding</h2><blockquote>
 <p>配置 hexo deploy<br>hexo 提供了一个部署命令 hexo deploy，首先需要安装一下 hexo-deployer-git插件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
 </blockquote>
-<p><em>记得配置config.yml</em></p>
+<p><img src="http://ok2ecl13j.bkt.clouddn.com/%E5%9B%BE%E7%89%879.png" alt="image"><br><em>记得配置config.yml</em></p>
 <p><floder>配置信息</floder><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Site</div><div class="line">title: Shally</div><div class="line">subtitle: 码农的日常</div><div class="line">description: start from zero</div><div class="line">author: yangfang: zh-CN</div><div class="line">timezone: Asia/Shanxi</div></pre></td></tr></table></figure></p>
 <h3 id="配置统一资源定位符-个人域名"><a href="#配置统一资源定位符-个人域名" class="headerlink" title="配置统一资源定位符(个人域名)"></a>配置统一资源定位符(个人域名)</h3><blockquote>
 <p>url:<a href="http://inderstack.com" target="_blank" rel="external">http://inderstack.com</a><br>对于root（根目录）、permalink（永久链接）、permalink_default(默认永久链接)等其他信息保持默认</p>
