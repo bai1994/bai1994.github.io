@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="常见的git命令," />
+  <meta name="keywords" content="前端,js," />
 
 
 
@@ -84,16 +84,37 @@
 
 
 
-<meta name="description" content="文字，是飘逸遐想的心之语，超越风尘的爱之味，破晓心语情之意，是来自心灵，绽放自我，叹感人生的唤醒。一段深情之作，会让我们探寻心情，一段惊人之语，会让我们沉醉不已，无须道破的模切，雨露甘霖让人愉悦，欣赏一段美丽的文字，生活总似诗意般美好。词情深邃的文字婉约清雅，恬静清逸的墨香淡泊飘逸。">
+<meta name="description" content="##说明
+
+在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。
+###案例说明
+
+12341、new绑定，使用新构建对象作为运行环境    function fn(a)&amp;#123;        this.name = a; //this    &amp;#125;
+
+使用ne">
 <meta property="og:type" content="article">
-<meta property="og:title" content="深情才情深">
-<meta property="og:url" content="http://yoursite.com/2017/03/06/joke/index.html">
+<meta property="og:title" content="javascript之this的指向">
+<meta property="og:url" content="http://yoursite.com/2017/03/07/javascript_this/index.html">
 <meta property="og:site_name" content="攻城狮-web">
-<meta property="og:description" content="文字，是飘逸遐想的心之语，超越风尘的爱之味，破晓心语情之意，是来自心灵，绽放自我，叹感人生的唤醒。一段深情之作，会让我们探寻心情，一段惊人之语，会让我们沉醉不已，无须道破的模切，雨露甘霖让人愉悦，欣赏一段美丽的文字，生活总似诗意般美好。词情深邃的文字婉约清雅，恬静清逸的墨香淡泊飘逸。">
-<meta property="og:updated_time" content="2017-03-07T06:58:54.225Z">
+<meta property="og:description" content="##说明
+
+在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。
+###案例说明
+
+12341、new绑定，使用新构建对象作为运行环境    function fn(a)&amp;#123;        this.name = a; //this    &amp;#125;
+
+使用ne">
+<meta property="og:updated_time" content="2017-03-07T09:25:17.490Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="深情才情深">
-<meta name="twitter:description" content="文字，是飘逸遐想的心之语，超越风尘的爱之味，破晓心语情之意，是来自心灵，绽放自我，叹感人生的唤醒。一段深情之作，会让我们探寻心情，一段惊人之语，会让我们沉醉不已，无须道破的模切，雨露甘霖让人愉悦，欣赏一段美丽的文字，生活总似诗意般美好。词情深邃的文字婉约清雅，恬静清逸的墨香淡泊飘逸。">
+<meta name="twitter:title" content="javascript之this的指向">
+<meta name="twitter:description" content="##说明
+
+在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。
+###案例说明
+
+12341、new绑定，使用新构建对象作为运行环境    function fn(a)&amp;#123;        this.name = a; //this    &amp;#125;
+
+使用ne">
 
 
 
@@ -121,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/06/joke/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/07/javascript_this/"/>
 
 
 
 
 
-  <title> 深情才情深 | 攻城狮-web </title>
+  <title> javascript之this的指向 | 攻城狮-web </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -270,7 +291,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/06/joke/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/07/javascript_this/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Mrbai">
@@ -294,7 +315,7 @@
             
             
               
-                深情才情深
+                javascript之this的指向
               
             
           </h1>
@@ -309,8 +330,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-06T22:39:14+08:00">
-                2017-03-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-07T15:02:27+08:00">
+                2017-03-07
               </time>
             
 
@@ -332,8 +353,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/随笔一记/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔一记</span>
+                  <a href="/categories/javascript笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript笔记</span>
                   </a>
                 </span>
 
@@ -350,8 +371,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/03/06/joke/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/06/joke/" itemprop="commentCount"></span>
+                <a href="/2017/03/07/javascript_this/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/07/javascript_this/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -377,8 +398,53 @@
       
 
       
-        <hr>
-<p><br>    文字，是飘逸遐想的心之语，超越风尘的爱之味，破晓心语情之意，是来自心灵，绽放自我，叹感人生的唤醒。一段深情之作，会让我们探寻心情，一段惊人之语，会让我们沉醉不已，无须道破的模切，雨露甘霖让人愉悦，欣赏一段美丽的文字，生活总似诗意般美好。词情深邃的文字婉约清雅，恬静清逸的墨香淡泊飘逸。<br></p>
+        <p>##说明</p>
+<blockquote>
+<p>在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。</p>
+<p>###案例说明</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1、new绑定，使用新构建对象作为运行环境</div><div class="line">    <span class="keyword">function</span> fn(a)&#123;</div><div class="line">        this.name = a; //this</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>使用new发生的几件事</p>
+<ol>
+<li>新建一个对象</li>
+<li>将这个对象加入原型链</li>
+<li>this绑定</li>
+<li>一般返回这个新对象</li>
+</ol>
+<ul>
+<li>函数结合new当做构造函数使用,本质也是函数调用，表达式的值等于return的结果<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>()&#123;</div><div class="line">        var name = <span class="string">"Beter"</span></div><div class="line">        console.log(this.name) //undefine</div><div class="line">        console.log(this)   //window</div><div class="line">    &#125;</div><div class="line">    fun()</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>this最终指向的是调用它对象,这里的函数fun实际是被window对象所指出的。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var o = &#123;</div><div class="line">user:<span class="string">'beter'</span>,</div><div class="line">fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">    console.log(this.user) //beter</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">o.fn();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><em>在这里this为什么不是指向window.解释一下，window是js中 的全局变量，我们创建的变量实际上就是给window添加属性，所以这里的window指向o</em><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var o = &#123;</div><div class="line">    a:10,</div><div class="line">    b:&#123;</div><div class="line">        a:12,</div><div class="line">        fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">            console.log(this.a); //12</div><div class="line">            console.log(this.b); //undefined</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">o.b.fn();</div></pre></td></tr></table></figure></p>
+<ul>
+<li>情况1：如果一个函数中有this，但是它没有被上一级的对象所调用，那么this指向的就是window，这里需要说明的是在js的严格版中this指向的不是window</li>
+<li>如果一个函数中有this，这个函数有被上一级的对象所调用，那么this指向的就是上一级的对象</li>
+<li>如果一个函数中有this，这个函数中包含多个对象，尽管这个函数是被最外层的对象所调用，this指向的也只是它上一级的对象</li>
+</ul>
+<blockquote>
+<p>特殊情况<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var o = &#123;</div><div class="line">    a:10,</div><div class="line">    b:&#123;</div><div class="line">        a:12,</div><div class="line">        fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">            console.log(this) //window</div><div class="line"></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">var j = o.b.fn</div><div class="line">j()</div></pre></td></tr></table></figure></p>
+<p>这里this指向的是window，是不是有些蒙了？其实是因为你没有理解一句话，这句话同样至关重要。<em>this永远指向的是最后调用它的对象，也就是看它执行的时候是谁调用的，例子4中虽然函数fn是被对象b所引用，但是在将fn赋值给变量j的时候并没有执行所以最终指向的是window</em><br>构造函数中的this<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>()&#123;</div><div class="line">    this.user = <span class="string">"beter"</span></div><div class="line">&#125;</div><div class="line">var a = new fun();</div><div class="line">console.log(a.user) //beter</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>这里的对象a可以点进函数fn里面的user是因为new关键字可以改变this的指向，将这个this指向a，为什么说a是对象，因为new关键字就是创建一个实例对象，这里用变量a创建一个fun的实例(相当于复制了一份fun到对象a里面)，调用这个函数fun的是对象a，this就自然指向对象a。<br>/除了new外，自行改变this指向的还有call,apply,bind/</p>
+<blockquote>
+<p>当this遇上return<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()  </div><div class="line">&#123;  </div><div class="line">    this.user = <span class="string">'追梦子'</span>;  </div><div class="line">    <span class="built_in">return</span> &#123;&#125;;  </div><div class="line">&#125;</div><div class="line">var a = new fn;  </div><div class="line">console.log(a.user); //undefined</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>继续看<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()  </div><div class="line">&#123;  </div><div class="line">    this.user = <span class="string">'追梦子'</span>;  </div><div class="line">    <span class="built_in">return</span> <span class="function"><span class="title">function</span></span>()&#123;&#125;; //这里的<span class="keyword">function</span>是一个对象，只是未执行</div><div class="line">&#125;</div><div class="line">var a = new fn;  </div><div class="line">console.log(a.user); //undefined</div></pre></td></tr></table></figure></p>
+<p>demo不能停<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()  </div><div class="line">&#123;  </div><div class="line">    this.user = <span class="string">'追梦子'</span>;  </div><div class="line">    <span class="built_in">return</span> 1;</div><div class="line">&#125;</div><div class="line">var a = new fn;  </div><div class="line">console.log(a.user); //追梦子</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()  </div><div class="line">&#123;  </div><div class="line">    this.user = <span class="string">'追梦子'</span>;  </div><div class="line">    <span class="built_in">return</span> undefined;</div><div class="line">&#125;</div><div class="line">var a = new fn;  </div><div class="line">console.log(a.user); //追梦子</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>如果返回值是一个对象，那么this指向的就是那个返回的对象，如果返回不是一个对象那么this指向函数的实例</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()  </div><div class="line">&#123;  </div><div class="line">    this.user = <span class="string">'追梦子'</span>;  </div><div class="line">    <span class="built_in">return</span> null;</div><div class="line">&#125;</div><div class="line">var a = new fn;  </div><div class="line">console.log(a.user); //追梦子</div></pre></td></tr></table></figure>
+<blockquote>
+<p>虽然null也是对象，但是this依旧指向函数的实例。</p>
+</blockquote>
+
       
     </div>
 
@@ -401,7 +467,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/常见的git命令/" rel="tag"># 常见的git命令</a>
+            <a href="/tags/前端/" rel="tag"># 前端</a>
+          
+            <a href="/tags/js/" rel="tag"># js</a>
           
         </div>
       
@@ -410,8 +478,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/06/git/" rel="next" title="一张图搞定Git基本应用">
-                <i class="fa fa-chevron-left"></i> 一张图搞定Git基本应用
+              <a href="/2017/03/07/幸福/" rel="next" title="简单的幸福">
+                <i class="fa fa-chevron-left"></i> 简单的幸福
               </a>
             
           </div>
@@ -419,10 +487,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/06/Bower包管理/" rel="prev" title="Bower包管理工具">
-                Bower包管理工具 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -471,8 +535,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/03/06/joke/"
-           data-title="深情才情深" data-url="http://yoursite.com/2017/03/06/joke/">
+      <div class="ds-thread" data-thread-key="2017/03/07/javascript_this/"
+           data-title="javascript之this的指向" data-url="http://yoursite.com/2017/03/07/javascript_this/">
       </div>
     
   </div>
