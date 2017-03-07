@@ -84,16 +84,25 @@
 
 
 
-<meta name="description" content="*说明:Bower与npm一样，都是包管理工具，Bower是一个客户端技术的包管理器，可以用于搜索、安装、卸载javascript,HTML,CSS之类的资源使用Bower安装bootstrap,jquery都不用去官网直接下载，只需要一个命令($bower install jquery –save), jquery就会安装在本地计算机上，你也可以通过Bower的info命令去查看任意库信息息可以">
+<meta name="description" content="说明:   
+
+Bower与npm一样，都是包管理工具，Bower是一个客户端技术的包管理器，可以用于搜索、安装、卸载javascript,HTML,CSS之类的资源
+使用Bower安装bootstrap,jquery都不用去官网直接下载，只需要一个命令($bower install jquery –save), jquery就会安装在本地计算机上，你也可以通过Bower的info命令去查看任意库">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Bower包管理工具">
 <meta property="og:url" content="http://yoursite.com/2017/03/06/Bower包管理/index.html">
 <meta property="og:site_name" content="攻城狮-web">
-<meta property="og:description" content="*说明:Bower与npm一样，都是包管理工具，Bower是一个客户端技术的包管理器，可以用于搜索、安装、卸载javascript,HTML,CSS之类的资源使用Bower安装bootstrap,jquery都不用去官网直接下载，只需要一个命令($bower install jquery –save), jquery就会安装在本地计算机上，你也可以通过Bower的info命令去查看任意库信息息可以">
-<meta property="og:updated_time" content="2017-03-07T06:27:13.747Z">
+<meta property="og:description" content="说明:   
+
+Bower与npm一样，都是包管理工具，Bower是一个客户端技术的包管理器，可以用于搜索、安装、卸载javascript,HTML,CSS之类的资源
+使用Bower安装bootstrap,jquery都不用去官网直接下载，只需要一个命令($bower install jquery –save), jquery就会安装在本地计算机上，你也可以通过Bower的info命令去查看任意库">
+<meta property="og:updated_time" content="2017-03-07T06:42:09.920Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bower包管理工具">
-<meta name="twitter:description" content="*说明:Bower与npm一样，都是包管理工具，Bower是一个客户端技术的包管理器，可以用于搜索、安装、卸载javascript,HTML,CSS之类的资源使用Bower安装bootstrap,jquery都不用去官网直接下载，只需要一个命令($bower install jquery –save), jquery就会安装在本地计算机上，你也可以通过Bower的info命令去查看任意库信息息可以">
+<meta name="twitter:description" content="说明:   
+
+Bower与npm一样，都是包管理工具，Bower是一个客户端技术的包管理器，可以用于搜索、安装、卸载javascript,HTML,CSS之类的资源
+使用Bower安装bootstrap,jquery都不用去官网直接下载，只需要一个命令($bower install jquery –save), jquery就会安装在本地计算机上，你也可以通过Bower的info命令去查看任意库">
 
 
 
@@ -377,7 +386,27 @@
       
 
       
-        <p>*说明:Bower与npm一样，都是包管理工具，Bower是一个客户端技术的包管理器，可以用于搜索、安装、卸载javascript,HTML,CSS之类的资源<br>使用Bower安装bootstrap,jquery都不用去官网直接下载，只需要一个命令($bower install jquery –save), jquery就会安装在本地计算机上，你也可以通过Bower的info命令去查看任意库信息<br>息<br>可以很容易的扩展客户端的依赖关系<br>可以让升级变得简单<br>*</p>
+        <p>说明:   </p>
+<ul>
+<li>Bower与npm一样，都是包管理工具，Bower是一个客户端技术的包管理器，可以用于搜索、安装、卸载javascript,HTML,CSS之类的资源</li>
+<li>使用Bower安装bootstrap,jquery都不用去官网直接下载，只需要一个命令($bower install jquery –save), jquery就会安装在本地计算机上，你也可以通过Bower的info命令去查看任意库信息</li>
+<li>可以很容易的扩展客户端的依赖关系</li>
+<li>可以让升级变得简单</li>
+</ul>
+<blockquote>
+<p>Bower安装(前提要安装nodejs)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$npm</span> install bower -g</div></pre></td></tr></table></figure></p>
+<p>Bower初始化<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$npm</span> init</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>会有提示信息，一直按enter即可，然后就会有bower.json文件在该目录文件下，如下:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"name"</span>: <span class="string">"bower-teest"</span>,</div><div class="line">  <span class="string">"description"</span>: <span class="string">"bower test"</span>,</div><div class="line">  <span class="string">"main"</span>: <span class="string">""</span>,</div><div class="line">  <span class="string">"authors"</span>: [</div><div class="line">    <span class="string">"jun-feng &lt;18603454788@163.com&gt;"</span></div><div class="line">  ],</div><div class="line">  <span class="string">"license"</span>: <span class="string">"MIT"</span>,</div><div class="line">  <span class="string">"homepage"</span>: <span class="string">""</span>,</div><div class="line">  <span class="string">"ignore"</span>: [</div><div class="line">    <span class="string">"**/.*"</span>,</div><div class="line">    <span class="string">"node_modules"</span>,</div><div class="line">    <span class="string">"bower_components"</span>,</div><div class="line">    <span class="string">"test"</span>,</div><div class="line">    <span class="string">"tests"</span></div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>Bower安装包<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ bower install &lt;package&gt; --save</div><div class="line">$ bower install jquery --save</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>然后bower就会从远程下载jquery最新版本到你的bower_components\jquery\dist目录下</p>
+<p>其中–save参数是保存配置到你的bower.json，你会发现bower.json文件已经多了一行：</p>
+<blockquote>
+<p>Bower查看包信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ bower info jquery</div></pre></td></tr></table></figure></p>
+<p>Bower更新包<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ bower update</div></pre></td></tr></table></figure></p>
+</blockquote>
 
       
     </div>
@@ -410,8 +439,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/06/joke/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2017/03/06/joke/" rel="next" title="深情才情深">
+                <i class="fa fa-chevron-left"></i> 深情才情深
               </a>
             
           </div>
@@ -419,6 +448,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/07/幸福/" rel="prev" title="简单的幸福">
+                简单的幸福 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -506,7 +539,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -515,7 +548,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
