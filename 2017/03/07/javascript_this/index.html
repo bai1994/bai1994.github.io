@@ -84,37 +84,19 @@
 
 
 
-<meta name="description" content="##说明
-
-在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。
-###案例说明
-
-12341、new绑定，使用新构建对象作为运行环境    function fn(a)&amp;#123;        this.name = a; //this    &amp;#125;
-
-使用ne">
+<meta name="description" content="说明
+在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。谁调用指向谁，找不到调用的就指向windownew,call apply改变this的指向a.call(b)将函数的内部指向b,同时调用了a函数argument是一个传参数的集合，类数组，用在所传递的参数不确定的情">
 <meta property="og:type" content="article">
 <meta property="og:title" content="javascript之this的指向">
 <meta property="og:url" content="http://yoursite.com/2017/03/07/javascript_this/index.html">
 <meta property="og:site_name" content="攻城狮-web">
-<meta property="og:description" content="##说明
-
-在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。
-###案例说明
-
-12341、new绑定，使用新构建对象作为运行环境    function fn(a)&amp;#123;        this.name = a; //this    &amp;#125;
-
-使用ne">
-<meta property="og:updated_time" content="2017-03-07T09:25:17.490Z">
+<meta property="og:description" content="说明
+在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。谁调用指向谁，找不到调用的就指向windownew,call apply改变this的指向a.call(b)将函数的内部指向b,同时调用了a函数argument是一个传参数的集合，类数组，用在所传递的参数不确定的情">
+<meta property="og:updated_time" content="2017-04-06T11:11:24.325Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript之this的指向">
-<meta name="twitter:description" content="##说明
-
-在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。
-###案例说明
-
-12341、new绑定，使用新构建对象作为运行环境    function fn(a)&amp;#123;        this.name = a; //this    &amp;#125;
-
-使用ne">
+<meta name="twitter:description" content="说明
+在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。谁调用指向谁，找不到调用的就指向windownew,call apply改变this的指向a.call(b)将函数的内部指向b,同时调用了a函数argument是一个传参数的集合，类数组，用在所传递的参数不确定的情">
 
 
 
@@ -398,11 +380,9 @@
       
 
       
-        <p>##说明</p>
-<blockquote>
-<p>在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。</p>
-<p>###案例说明</p>
-</blockquote>
+        <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><blockquote>
+<p>在学习js的过程中，最难搞清楚的就是this的指向谁？this本质上可以看做是函数调用时的运行环境对象-content.为执行中的函数判定this绑定需要找到这个函数的直接调用点。<br>谁调用指向谁，找不到调用的就指向window<br>new,call apply改变this的指向<br>a.call(b)将函数的内部指向b,同时调用了a函数<br>argument是一个传参数的集合，类数组，用在所传递的参数不确定的情况下</p>
+<h3 id="案例说明"><a href="#案例说明" class="headerlink" title="案例说明"></a>案例说明</h3></blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1、new绑定，使用新构建对象作为运行环境</div><div class="line">    <span class="keyword">function</span> fn(a)&#123;</div><div class="line">        this.name = a; //this</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
 <blockquote>
 <p>使用new发生的几件事</p>
@@ -413,14 +393,14 @@
 <li>一般返回这个新对象</li>
 </ol>
 <ul>
-<li>函数结合new当做构造函数使用,本质也是函数调用，表达式的值等于return的结果<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>()&#123;</div><div class="line">        var name = <span class="string">"Beter"</span></div><div class="line">        console.log(this.name) //undefine</div><div class="line">        console.log(this)   //window</div><div class="line">    &#125;</div><div class="line">    fun()</div></pre></td></tr></table></figure>
-</li>
+<li>函数结合new当做构造函数使用,本质也是函数调用，表达式的值等于return的结果</li>
 </ul>
 </blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>()&#123;</div><div class="line">        var name = <span class="string">"Beter"</span></div><div class="line">        console.log(this.name) //undefine</div><div class="line">        console.log(this)   //window</div><div class="line">    &#125;</div><div class="line">    fun()</div></pre></td></tr></table></figure>
 <ul>
-<li>this最终指向的是调用它对象,这里的函数fun实际是被window对象所指出的。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var o = &#123;</div><div class="line">user:<span class="string">'beter'</span>,</div><div class="line">fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">    console.log(this.user) //beter</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">o.fn();</div></pre></td></tr></table></figure>
-</li>
+<li>this最终指向的是调用它对象,这里的函数fun实际是被window对象所指出的。</li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var o = &#123;</div><div class="line">user:<span class="string">'beter'</span>,</div><div class="line">fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">    console.log(this.user) //beter</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">o.fn();</div></pre></td></tr></table></figure>
 <p><em>在这里this为什么不是指向window.解释一下，window是js中 的全局变量，我们创建的变量实际上就是给window添加属性，所以这里的window指向o</em><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var o = &#123;</div><div class="line">    a:10,</div><div class="line">    b:&#123;</div><div class="line">        a:12,</div><div class="line">        fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">            console.log(this.a); //12</div><div class="line">            console.log(this.b); //undefined</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">o.b.fn();</div></pre></td></tr></table></figure></p>
 <ul>
 <li>情况1：如果一个函数中有this，但是它没有被上一级的对象所调用，那么this指向的就是window，这里需要说明的是在js的严格版中this指向的不是window</li>
@@ -428,13 +408,18 @@
 <li>如果一个函数中有this，这个函数中包含多个对象，尽管这个函数是被最外层的对象所调用，this指向的也只是它上一级的对象</li>
 </ul>
 <blockquote>
-<p>特殊情况<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var o = &#123;</div><div class="line">    a:10,</div><div class="line">    b:&#123;</div><div class="line">        a:12,</div><div class="line">        fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">            console.log(this) //window</div><div class="line"></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">var j = o.b.fn</div><div class="line">j()</div></pre></td></tr></table></figure></p>
-<p>这里this指向的是window，是不是有些蒙了？其实是因为你没有理解一句话，这句话同样至关重要。<em>this永远指向的是最后调用它的对象，也就是看它执行的时候是谁调用的，例子4中虽然函数fn是被对象b所引用，但是在将fn赋值给变量j的时候并没有执行所以最终指向的是window</em><br>构造函数中的this<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>()&#123;</div><div class="line">    this.user = <span class="string">"beter"</span></div><div class="line">&#125;</div><div class="line">var a = new fun();</div><div class="line">console.log(a.user) //beter</div></pre></td></tr></table></figure></p>
+<p>特殊情况</p>
 </blockquote>
-<p>这里的对象a可以点进函数fn里面的user是因为new关键字可以改变this的指向，将这个this指向a，为什么说a是对象，因为new关键字就是创建一个实例对象，这里用变量a创建一个fun的实例(相当于复制了一份fun到对象a里面)，调用这个函数fun的是对象a，this就自然指向对象a。<br>/除了new外，自行改变this指向的还有call,apply,bind/</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var o = &#123;</div><div class="line">    a:10,</div><div class="line">    b:&#123;</div><div class="line">        a:12,</div><div class="line">        fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">            console.log(this) //window</div><div class="line"></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">var j = o.b.fn</div><div class="line">j()</div></pre></td></tr></table></figure>
 <blockquote>
-<p>当this遇上return<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()  </div><div class="line">&#123;  </div><div class="line">    this.user = <span class="string">'追梦子'</span>;  </div><div class="line">    <span class="built_in">return</span> &#123;&#125;;  </div><div class="line">&#125;</div><div class="line">var a = new fn;  </div><div class="line">console.log(a.user); //undefined</div></pre></td></tr></table></figure></p>
+<p>这里this指向的是window，是不是有些蒙了？其实是因为你没有理解一句话，这句话同样至关重要。<em>this永远指向的是最后调用它的对象，也就是看它执行的时候是谁调用的，例子4中虽然函数fn是被对象b所引用，但是在将fn赋值给变量j的时候并没有执行所以最终指向的是window</em><br>构造函数中的this</p>
 </blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>()&#123;</div><div class="line">    this.user = <span class="string">"beter"</span></div><div class="line">&#125;</div><div class="line">var a = new fun();</div><div class="line">console.log(a.user) //beter</div></pre></td></tr></table></figure>
+<p>这里的对象a可以点进函数fn里面的user是因为new关键字可以改变this的指向，将这个this指向a，为什么说a是对象，因为new关键字就是创建一个实例对象，这里用变量a创建一个fun的实例(相当于复制了一份fun到对象a里面)，调用这个函数fun的是对象a，this就自然指向对象a。<br>/除了new外，自行改变this指向的还有call,apply,bind/<br>升级代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var x = 2;</div><div class="line">　　<span class="keyword">function</span> <span class="function"><span class="title">test</span></span>()&#123;</div><div class="line">　　　　this.x = 1;</div><div class="line">　　&#125;</div><div class="line">　　var o = new <span class="built_in">test</span>();</div><div class="line">　　alert(x);  //2</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>当this遇上return</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()  </div><div class="line">&#123;  </div><div class="line">    this.user = <span class="string">'追梦子'</span>;  </div><div class="line">    <span class="built_in">return</span> &#123;&#125;;  </div><div class="line">&#125;</div><div class="line">var a = new fn;  </div><div class="line">console.log(a.user); //undefined</div></pre></td></tr></table></figure>
 <p>继续看<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()  </div><div class="line">&#123;  </div><div class="line">    this.user = <span class="string">'追梦子'</span>;  </div><div class="line">    <span class="built_in">return</span> <span class="function"><span class="title">function</span></span>()&#123;&#125;; //这里的<span class="keyword">function</span>是一个对象，只是未执行</div><div class="line">&#125;</div><div class="line">var a = new fn;  </div><div class="line">console.log(a.user); //undefined</div></pre></td></tr></table></figure></p>
 <p>demo不能停<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()  </div><div class="line">&#123;  </div><div class="line">    this.user = <span class="string">'追梦子'</span>;  </div><div class="line">    <span class="built_in">return</span> 1;</div><div class="line">&#125;</div><div class="line">var a = new fn;  </div><div class="line">console.log(a.user); //追梦子</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()  </div><div class="line">&#123;  </div><div class="line">    this.user = <span class="string">'追梦子'</span>;  </div><div class="line">    <span class="built_in">return</span> undefined;</div><div class="line">&#125;</div><div class="line">var a = new fn;  </div><div class="line">console.log(a.user); //追梦子</div></pre></td></tr></table></figure></p>
 <blockquote>
@@ -443,7 +428,29 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()  </div><div class="line">&#123;  </div><div class="line">    this.user = <span class="string">'追梦子'</span>;  </div><div class="line">    <span class="built_in">return</span> null;</div><div class="line">&#125;</div><div class="line">var a = new fn;  </div><div class="line">console.log(a.user); //追梦子</div></pre></td></tr></table></figure>
 <blockquote>
 <p>虽然null也是对象，但是this依旧指向函数的实例。</p>
+<p>函数还可以作为某个对象的方法调用，这时this就指这个上级对象</p>
 </blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">test</span></span>()&#123;</div><div class="line">　　　　alert(this.x);</div><div class="line">　　&#125;</div><div class="line">　　var o = &#123;&#125;;</div><div class="line">　　o.x = 1;</div><div class="line">　　o.m = <span class="built_in">test</span>;</div><div class="line">o.m(); // 1</div></pre></td></tr></table></figure>
+<blockquote>
+<p>对象中的this指向</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">demo1---</div><div class="line">var obj=&#123;name:<span class="string">'jjc'</span>&#125;</div><div class="line">        var obj1 = &#123;</div><div class="line">            name:<span class="string">"monkey"</span>,</div><div class="line">            fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">            console.log(this.name)</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        obj1.fn(); //monkey</div><div class="line">        obj1.fn.call(obj); //jjc</div><div class="line">demo2---</div><div class="line">var obj=&#123;</div><div class="line">            name:<span class="string">'jiajiac'</span>,</div><div class="line">            fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                console.log(this.name) //jiajiac</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            obj.fn()</div><div class="line">demo3---</div><div class="line">        var name = <span class="string">'guiyanhuaichao'</span>;</div><div class="line">            var obj=&#123;</div><div class="line">            name:<span class="string">'lige-xin'</span>,</div><div class="line">            fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                var name = this.name;</div><div class="line">                console.log(name.name) //fengjun</div><div class="line">                alert(name) //guiyanhuaichao</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        obj.fn()</div></pre></td></tr></table></figure>
+<blockquote>
+<p>对应事件的调用</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var btn = document.querySelector(<span class="string">'button'</span>);</div><div class="line">        btn.onclick = <span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">            console.log(this) //this指向btn/对应的元素 </div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>全局调用函数内部的this</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">Fun</span></span>()&#123;</div><div class="line">            console.log(this) //指向window</div><div class="line">        &#125;</div><div class="line">        Fun()  //window.Fun()</div></pre></td></tr></table></figure>
+<blockquote>
+<p>定时器会将this-&gt;window</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var btn = document.querySelector(<span class="string">'button'</span>);</div><div class="line">            btn.onclick = <span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                </div><div class="line">                console.log(this) //this指向btn/对应的元素</div><div class="line">                <span class="built_in">set</span>Timeout(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                console.log(this) //window 全局变量，对于任何时间的设置都会指向window</div><div class="line">                &#125;,1000) </div><div class="line">            &#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>对象下面设置的定时器依旧指向window</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">var name = <span class="string">'houzi'</span>,sex=<span class="string">'男'</span>,other=<span class="string">'basket'</span></div><div class="line">            var obj=&#123;</div><div class="line">            name:<span class="string">'贾己超'</span>,</div><div class="line">            sex:<span class="string">'男'</span>,</div><div class="line">            other:<span class="string">'篮球'</span>,</div><div class="line">            fn:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                var _this = this;</div><div class="line">                console.log(this.name) //jjc</div><div class="line">                <span class="built_in">set</span>Timeout(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                    alert(_this.sex) //男 这里指向全局变量</div><div class="line">                    alert(_this.other)  //basket 这里指向全局变量</div><div class="line">                &#125;,500)</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        obj.fn()</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -487,6 +494,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/08/闭包/" rel="prev" title="闭包">
+                闭包 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -560,8 +571,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/wei.jpg"
@@ -574,7 +594,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -583,7 +603,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -592,7 +612,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -655,6 +675,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#案例说明"><span class="nav-number">1.1.</span> <span class="nav-text">案例说明</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
